@@ -1,0 +1,357 @@
+/* Reset styles */
+
+html {
+  height: 100%;
+}
+
+body {
+  margin:0px;
+  padding:0px;
+  height: 100%;
+}
+
+div {
+  margin:0px;
+  padding:0px;
+}
+
+h1, h2, h3, h4, h5, p, table, iframe {
+  margin-top: 0px;
+}
+
+h1, h2, h3, h4 {
+  text-align: center;
+}
+
+a img {
+  border: none;
+}
+
+ul {
+  list-style-position: inside;
+  list-style-type: none;
+}
+
+table {
+  border-spacing: 0px;
+  border-collapse: collapse;
+}
+
+/* Text styles */
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+h2 {
+  text-align: left;
+  font-size: 18px;
+  line-height: 18px;
+  color: #8fdfc2;
+  text-transform: lowercase;
+}
+
+h2 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h3 {
+  margin-bottom: 16px;
+  text-align: left;
+  font-size: 24px;
+  line-height: 24px;
+  color: #fda322;
+  text-transform: lowercase;
+}
+
+h4 {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Utility styles */
+
+.clear {
+  clear: both;
+  height: 0px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/* Layout & specific styles */
+
+body {
+  background-image: url(../images/body-background.jpg);
+  background-position: 50% 0%;
+  background-repeat: repeat-x;
+}
+
+#main {
+  margin:0px auto 0px auto;
+  width: 1260px;
+  height: 1200px;
+}
+
+#navigation {
+  position: relative;
+  width: 100%;
+  height: 36px;
+}
+
+#navigation h2 {
+  float: left;
+  margin: 9px 32px 0px 174px;
+}
+
+#navigation .menu {
+  float: left;
+  margin-top: 10px;
+}
+
+.menu a {
+  margin-right: 16px;
+}
+
+#social {
+  position: absolute;
+  right: 192px;
+  top: 10px;
+}
+
+#social a img {
+  margin-right: 4px;
+}
+
+#content-main {
+  width: 100%;
+}
+
+#splash {
+  position: relative;
+  margin: 0px auto 0px auto;
+  width: 960px;
+  height: 600px;
+  background-image: url(../images/content-main-background-index.png);
+  cursor: pointer;
+}
+
+#about-us {
+  position: absolute;
+  left: 16px;
+  bottom: 32px;
+  width: 400px;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: bold;
+}
+
+#play {
+  display: none;
+  position: absolute;
+  left: 447px;
+  top: 231px;
+  width: 66px;
+  height: 138px;
+}
+
+#episode {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+  width: 960px;
+  height: 437px;
+  background-image: url(../images/episode-background-v2.jpg);
+}
+
+#player {
+  float: left;
+  margin: 16px;
+  width: 720px;
+  height: 405px;
+}
+
+#summary {
+  float: left;
+  margin: 16px 16px 16px 0px;
+  width: 192px;
+  height: 405px;
+  overflow: hidden;
+}
+
+#gallery {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+  width: 960px;
+  height: 160px;
+  background-image: url(../images/gallery-background.jpg);
+}
+
+#episode-navigator {
+  float: left;
+  margin: 21px 24px 21px 24px;
+  width: 96px;
+  height: 112px;
+  text-align: center;
+}
+
+#episode-navigator-up {
+  width: 100%;
+  height: 23px;
+  background-image: url(../images/episode-navigator-up.png);
+  background-position: 38px 7px;
+  background-repeat: no-repeat;
+}
+
+#episode-navigator-down {
+  width: 100%;
+  height: 23px;
+  background-image: url(../images/episode-navigator-down.png);
+  background-position: 38px 7px;
+  background-repeat: no-repeat;
+}
+
+#episode-navigator-list-frame {
+  position: relative;
+  margin-top: 6px;
+  width: 100%;
+  height: 66px;
+  overflow: hidden;
+}
+
+#episode-navigator-list {
+  position: absolute;
+  width: 100%;
+}
+
+.episode-navigator-row {
+  margin: 0px 0px 6px 0px;
+  border: 0px;
+  width: 100%;
+  height: 16px;
+  overflow: hidden;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: bold;
+  text-transform: lowercase;
+  color: #586580;
+}
+
+.episode-navigator-row.selected {
+  color: #ffffff;
+}
+
+#episode-thumbnails {
+  float: left;
+  position: relative;
+  margin: 40px 16px 40px 0px;
+  width: 800px;
+  height: 80px;
+  overflow: hidden;
+}
+
+#episode-thumbnails-list {
+  position: absolute;
+}
+
+.episode-thumbnails-row {
+  margin-bottom: 16px;
+  height: 80px;
+  overflow: hidden;
+}
+
+#episode-thumbnails img {
+  margin: 0px 16px 0px 0px;
+  width: 144px;
+  height: 81px;
+}
+
+#content-bottom {
+  width: 100%;
+  height: 388px;
+  background-image: url(../images/content-bottom-background.jpg);
+}
+
+#content-bottom-col-1 {
+  float: right;
+  margin:24px 16px 24px 0px;
+}
+
+#tumblr {
+  width: 300px;
+}
+
+#tumblr td {
+  width: 96px;
+  height: 96px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#tumblr a {
+  margin-right: 4px;
+  margin-bottom: 4px;
+}
+
+#tumblr a img {
+  max-width: 92px;
+  max-height: 92px;
+}
+
+#content-bottom-col-2 {
+  float: right;
+  margin:24px 24px 24px 0px;
+  width: 480px;
+}
+
+#community {
+  margin-bottom: 16px;
+}
+
+#community img {
+  float: left;
+  margin-right: 16px;
+  margin-bottom: 16px;
+  max-width: 192px;
+  max-height: 192px;
+}
+
+.post-title {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#contact-email {
+  float: left;
+  width: 160px;
+}
+
+#contact-snailmail {
+  float: left;
+  width: 240px;
+}
+
+#footer {
+  width: 100%;
+}
+
+#footer .menu {
+  margin: 32px 0px 8px 150px;
+}
+
+#copyright {
+  margin-left: 150px;
+  color: #000000;
+}
+
