@@ -98,27 +98,31 @@
               }
     
               function navigateUp() {
-                  selectedEpisode++;
+                  if (selectedEpisode < numberOfEpisodes) {
+                      selectedEpisode++;
         
-                  episodeNavigatorListTop = episodeNavigatorListTop - episodeNavigatorRowHeight;
-                  $('#episode-navigator-list').animate({top: episodeNavigatorListTop + 'px'}, 
-                                                       500, 
-                                                       function() { configureEpisodeNavigator(); });
-                  episodeThumbnailsListTop = episodeThumbnailsListTop - episodeThumbnailsRowHeight;
-                  $('#episode-thumbnails-list').animate({top: episodeThumbnailsListTop + 'px'}, 
-                                                       500 );
+                      episodeNavigatorListTop = episodeNavigatorListTop - episodeNavigatorRowHeight;
+                      $('#episode-navigator-list').animate({top: episodeNavigatorListTop + 'px'}, 
+                                                           500, 
+                                                           function() { configureEpisodeNavigator(); });
+                      episodeThumbnailsListTop = episodeThumbnailsListTop - episodeThumbnailsRowHeight;
+                      $('#episode-thumbnails-list').animate({top: episodeThumbnailsListTop + 'px'}, 
+                                                           500 );
+                  }
               }
     
               function navigateDown() {
-                  selectedEpisode--;
+                  if (selectedEpisode > 1) {
+                      selectedEpisode--;
         
-                  episodeNavigatorListTop = episodeNavigatorListTop + episodeNavigatorRowHeight;
-                  $('#episode-navigator-list').animate({top: episodeNavigatorListTop + 'px'}, 
-                                                       500, 
-                                                       function() { configureEpisodeNavigator(); });
-                  episodeThumbnailsListTop = episodeThumbnailsListTop + episodeThumbnailsRowHeight;
-                  $('#episode-thumbnails-list').animate({top: episodeThumbnailsListTop + 'px'}, 
-                                                       500 );
+                      episodeNavigatorListTop = episodeNavigatorListTop + episodeNavigatorRowHeight;
+                      $('#episode-navigator-list').animate({top: episodeNavigatorListTop + 'px'}, 
+                                                           500, 
+                                                           function() { configureEpisodeNavigator(); });
+                      episodeThumbnailsListTop = episodeThumbnailsListTop + episodeThumbnailsRowHeight;
+                      $('#episode-thumbnails-list').animate({top: episodeThumbnailsListTop + 'px'}, 
+                                                           500 );
+                  }
               }
               
               $(document).ready(function() {
