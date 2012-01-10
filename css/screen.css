@@ -142,6 +142,7 @@ body {
   margin: 0px auto 0px auto;
   width: 960px;
   height: 600px;
+  overflow: hidden;
   background-image: url(../images/content-main-background-index.png);
   cursor: pointer;
 }
@@ -156,7 +157,15 @@ body {
   font-weight: bold;
 }
 
-#play {
+#play-ribbon {
+  position: absolute;
+  right: 36px;
+  top: -48px;
+  width: 90px;
+  height: 136px;
+}
+
+#play-icon {
   display: none;
   position: absolute;
   left: 447px;
@@ -278,9 +287,28 @@ body {
 }
 
 #content-bottom {
+  position: relative;
   width: 100%;
   height: 388px;
   background-image: url(../images/content-bottom-background.jpg);
+}
+
+#coffee-cup {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 400px;
+  height: 225px;
+  background-image: url(../images/coffee-cup.png);
+}
+
+#coffee-cinemagraph {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 400px;
+  height: 225px;
+  background-image: url(../images/coffee-cinemagraph.gif);
 }
 
 #content-bottom-col-1 {

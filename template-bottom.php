@@ -1,6 +1,8 @@
       </div>
       
       <div id="content-bottom">
+        <div id="coffee-cup"></div>
+        
         <div id="content-bottom-col-2">
           <div id="community">
             <h3>Our Community</h3>

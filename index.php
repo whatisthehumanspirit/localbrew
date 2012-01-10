@@ -5,10 +5,19 @@
                   /* Show play icon */
           	      $('#splash').hover(
           	          function() {
-          	              $('#play').css('display', 'block');
+          	              $('#play-icon').css('display', 'block');
         	            },
         	            function() {
-        	                $('#play').css('display', 'none');
+        	                $('#play-icon').css('display', 'none');
+      	              }
+        	        );
+        	        
+        	        $('#play-ribbon').hover(
+          	          function() {
+          	              $(this).animate({top: '0px'}, 200);
+        	            },
+        	            function() {
+        	                $(this).animate({top: '-48px'}, 200);
       	              }
         	        );
   	        
@@ -24,7 +33,9 @@
           Tapping everything from our people to our events, Local Brew 
           explores just how awesome this city is.</div>
           
-          <img id="play" alt="" src="images/play.png" />
+          <img id="play-ribbon" alt="" src="images/play-ribbon.png" />
+          
+          <img id="play-icon" alt="" src="images/play-icon.png" />
         </div>
         
         
