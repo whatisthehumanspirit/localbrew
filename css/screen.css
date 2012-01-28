@@ -257,7 +257,12 @@ body {
   color: #586580;
 }
 
-.episode-navigator-row.selected {
+.episode-navigator-row a {
+  color: inherit;
+}
+
+.episode-navigator-row.selected, 
+.episode-navigator-row.selected a {
   color: #ffffff;
 }
 

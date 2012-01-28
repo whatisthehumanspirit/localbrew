@@ -1,13 +1,21 @@
 <?php
     require_once('episode-data.php');
     
+    // Numerical episode parameters
     $numberOfEpisodes = count($episodes);
     // Show latest episode if episode is not specified in URL
-    $currentEpisode = intval($_GET['episode']);
-    if ($currentEpisode == 0) {
-        $currentEpisode = $numberOfEpisodes;
+    if (!isset($_GET['episode'])) {
+        $currentEpisode = $episodes[$numberOfEpisodes - 1]['number'];
+    } else {
+        $currentEpisode = $_GET['episode'];
     }
-    $currentEpisodeIndex = $currentEpisode - 1;
+    // Find current episode index
+    for ($i = 0; $i < $numberOfEpisodes; $i++) {
+        if ($episodes[$i]['number'] == $currentEpisode) {
+            $currentEpisodeIndex = $i;
+            break;
+        }
+    }
     
     // Specify YouTube video quality in URL
     $quality = $_GET['quality'];
@@ -71,8 +79,8 @@
         
         <div id="gallery">
           <script type="text/javascript">
-              var currentEpisode = <?php echo $currentEpisode; ?>;
-              var selectedEpisode = currentEpisode;
+              var currentEpisodePosition = <?php echo $currentEpisodeIndex + 1; ?>;
+              var selectedEpisodePosition = currentEpisodePosition;
               var numberOfEpisodes = <?php echo $numberOfEpisodes; ?>;
               var episodeNavigatorListTop;
               var episodeThumbnailsListTop;
@@ -82,24 +90,24 @@
               function configureEpisodeNavigator() {
                   $('.episode-navigator-row.selected').removeClass('selected');
         
-                  if (selectedEpisode == 1) {
+                  if (selectedEpisodePosition == 1) {
                       $('#episode-navigator-down').css('visibility', 'hidden');
                   } else {
                       $('#episode-navigator-down').css('visibility', 'visible');
                   }
         
-                  if (selectedEpisode == numberOfEpisodes) {
+                  if (selectedEpisodePosition == numberOfEpisodes) {
                       $('#episode-navigator-up').css('visibility', 'hidden');
                   } else {
                       $('#episode-navigator-up').css('visibility', 'visible');
                   }
         
-                  $('.episode-navigator-row').eq(selectedEpisode - 1).addClass('selected');
+                  $('.episode-navigator-row').eq(selectedEpisodePosition - 1).addClass('selected');
               }
     
               function navigateUp() {
-                  if (selectedEpisode < numberOfEpisodes) {
-                      selectedEpisode++;
+                  if (selectedEpisodePosition < numberOfEpisodes) {
+                      selectedEpisodePosition++;
         
                       episodeNavigatorListTop = episodeNavigatorListTop - episodeNavigatorRowHeight;
                       $('#episode-navigator-list').animate({top: episodeNavigatorListTop + 'px'}, 
@@ -112,8 +120,8 @@
               }
     
               function navigateDown() {
-                  if (selectedEpisode > 1) {
-                      selectedEpisode--;
+                  if (selectedEpisodePosition > 1) {
+                      selectedEpisodePosition--;
         
                       episodeNavigatorListTop = episodeNavigatorListTop + episodeNavigatorRowHeight;
                       $('#episode-navigator-list').animate({top: episodeNavigatorListTop + 'px'}, 
@@ -136,7 +144,7 @@
             <div id="episode-navigator-up" onclick="navigateUp();"></div>
             
             <div id="episode-navigator-list-frame">
-              <div id="episode-navigator-list" style="top: -<?php echo ($currentEpisode - 2) * 22; ?>px;">
+              <div id="episode-navigator-list" style="top: <?php echo 22 - ($currentEpisodeIndex) * 22; ?>px;">
                 <?php
                     foreach ($episodes as $episode) {
                         echo '<div class="episode-navigator-row"><a title="" href="episodes.php?episode=' . $episode['number'] . '">Episode ' . $episode['number'] . ':</a></div>';
@@ -149,7 +157,7 @@
           </div>
           
           <div id="episode-thumbnails">
-            <div id="episode-thumbnails-list" style="top: -<?php echo ($currentEpisode - 1) * 96; ?>px;">
+            <div id="episode-thumbnails-list" style="top: -<?php echo ($currentEpisodeIndex) * 96; ?>px;">
               <?php
                     foreach ($episodes as $episode) {
                         echo '<div class="episode-thumbnails-row">';
