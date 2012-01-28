@@ -11,13 +11,13 @@
           </div>
           
           <div id="contact">
-            <h3>What's Your Seattle?</h3>
+            <h3>Send us a tip!</h3>
             
             <div id="contact-email"><span class="bold">Email Us</span><br />
-              <a title="" href="mailto:info@localbrew.com">info@localbrew.com</a></div>
+              <a title="" href="mailto:justatip@localbrew.com">justatip@localbrew.com</a></div>
             
             <div id="contact-snailmail"><span class="bold">Fan Mail</span><br />
-              Rachael<br />
+              Rachel<br />
               550 Pike Place<br />
               Seattle, WA 98121</div>
           </div>
@@ -25,7 +25,7 @@
         
         <div id="content-bottom-col-1">
           <div id="tumblr">
-            <h3>Only In Seattle</h3>
+            <h3>all things #seattle</h3>
             
             
           </div>

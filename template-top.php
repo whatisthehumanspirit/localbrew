@@ -7,7 +7,7 @@
   <head>
   	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-    <title>Local Brew</title>
+    <title>Local Brew: Seattle's Online Comedy Show</title>
 
     <link rel="stylesheet" type="text/css" media="screen" href="css/screen.css" />
     

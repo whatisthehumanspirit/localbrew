@@ -25,7 +25,7 @@
             $videoQuality = 'hd1080';
             break;
         default:
-          $videoQuality = 'hd1080';
+          $videoQuality = 'hd720';
     }
     
     require_once('template-top.php');
@@ -139,7 +139,7 @@
               <div id="episode-navigator-list" style="top: -<?php echo ($currentEpisode - 2) * 22; ?>px;">
                 <?php
                     foreach ($episodes as $episode) {
-                        echo '<div class="episode-navigator-row">Episode ' . $episode['number'] . ':</div>';
+                        echo '<div class="episode-navigator-row"><a title="" href="episodes.php?episode=' . $episode['number'] . '">Episode ' . $episode['number'] . ':</a></div>';
                     }
                 ?>
               </div>
