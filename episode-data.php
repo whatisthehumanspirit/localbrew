@@ -3,7 +3,7 @@
 //DO NOTHING ABOVE THIS LINE, BRO
         // Episode
         array(
-            "number" => 0,
+            "number" => "0",
             "title" => "Episode 0",
             // No quotes in the summary, jackass! Just trust me. Apostrophes are OK.
             "summary" => "You've arrived!  …but a bit too early.  Episodes 1 posts on <br />Wednesday the 25th, but until then check out the tumblr and the (206)411 blog down below!",
@@ -21,7 +21,7 @@
         
         // Episode
         array(
-            "number" => 1,
+            "number" => "1",
             "title" => "Episode 1: A White Welcome",
             // No quotes in the summary, jackass! Just trust me. Apostrophes are OK.
             "summary" => "The snow tried to stop us, but the first show is here.  Did love survive Seattle's worst storm? Play the city's favorite game: Homeless or Hipster, and find out why the hell there's a huge tent of horses in Marymoor.  Share what you like on Facebook because we have no friends!",
