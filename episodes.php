@@ -33,7 +33,7 @@
             $videoQuality = 'hd1080';
             break;
         default:
-          $videoQuality = 'hd720';
+          $videoQuality = 'large';
     }
     
     require_once('template-top.php');
