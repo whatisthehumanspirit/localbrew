@@ -38,7 +38,7 @@
                           <a title="" href="http://localbrew.tumblr.com">Art</a>
                           <a title="" href="http://206community411.wordpress.com/">Community</a>
                           <a title="" href="http://206bsides.wordpress.com/">B-Sides</a>
-                          <a title="" href="mailto:info@localbrew.com">Contact</a>
+                          <a title="" href="mailto:justatip@localbrew.com">Contact</a>
         </div>
         
         <div id="copyright">2012 &copy; Local Brew. All rights reserved.</div>

@@ -76,7 +76,7 @@
         <div class="menu"><a title="" href="episodes.php">Laugh</a>
                           <a title="" href="http://localbrew.tumblr.com">Art</a>
                           <a title="" href="http://206community411.wordpress.com/">Community</a>
-                          <a title="" href="mailto:info@localbrew.com">Contact</a>
+                          <a title="" href="mailto:justatip@localbrew.com">Contact</a>
         </div>
         
         <div id="social"><a title="" href="http://twitter.com/#!/groovechomp"><img alt="" src="images/social-twitter.png" /></a>
