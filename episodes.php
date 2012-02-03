@@ -1,7 +1,7 @@
 <?php
     require_once('episode-data.php');
     
-    // Numerical episode parameters
+    // Numerical episode variables
     $numberOfEpisodes = count($episodes);
     // Show latest episode if episode is not specified in URL
     if (!isset($_GET['episode'])) {
@@ -15,6 +15,13 @@
             $currentEpisodeIndex = $i;
             break;
         }
+    }
+    
+    // Numerical clip variables
+    if (!isset($_GET['episode'])) {
+        $startingClipIndex = 0;
+    } else {
+        $startingClipIndex = $_GET['clip'] - 1;
     }
     
     // Specify YouTube video quality in URL
@@ -39,9 +46,14 @@
     require_once('template-top.php');
 ?>
         <div id="episode">          
-          <iframe id="player" src="http://www.youtube.com/embed/videoseries?list=<?php echo $episodes[$currentEpisodeIndex]['playlist']; ?>&amp;hl=en_US&amp;hd=1&amp;enablejsapi=1" frameborder="0" width="720" height="405"></iframe>
+          <!--<iframe id="player" src="http://www.youtube.com/embed/videoseries?list=<?php echo $episodes[$currentEpisodeIndex]['playlist']; ?>&amp;hl=en_US&amp;hd=1&amp;enablejsapi=1" frameborder="0" width="720" height="405"></iframe>-->
+          <div id="player"></div>
           
           <script type="text/javascript">
+              var currentEpisodePlaylistID =  "<?php echo $episodes[$currentEpisodeIndex]['playlist']; ?>";
+              var startingClipIndex = "<?php echo $startingClipIndex; ?>";
+              var videoQuality = "<?php echo $videoQuality; ?>"
+              
               // YouTube API
               var tag = document.createElement('script');
               tag.src = "http://www.youtube.com/player_api";
@@ -53,18 +65,20 @@
                   player = new YT.Player('player', {
                       events: {
                           'onReady': onPlayerReady,
-                          'onStateChange': onPlayerStateChange
+                          // 'onStateChange': onPlayerStateChange
                       }
                   });
               }
             
               function onPlayerReady(event) {
-                player.playVideo();
+                  // player.playVideo();
+                  player.setPlaybackQuality(videoQuality);
+                  player.loadPlaylist(currentEpisodePlaylistID, startingClipIndex);
               }
             
-              // API quirk - quality isn't forced if called by onReady event
+              // API quirk - with manual iframe embedding, quality isn't forced if called by onReady event
               function onPlayerStateChange(event) {
-                  player.setPlaybackQuality('<?php echo $videoQuality; ?>');
+                  // player.setPlaybackQuality(videoQuality);
               }
           </script>
           
@@ -162,8 +176,8 @@
                     foreach ($episodes as $episode) {
                         echo '<div class="episode-thumbnails-row">';
                         
-                        foreach ($episode['images'] as $image) {
-                                echo '<a title="" href="episodes.php?episode=' . $episode['number'] . '"><img alt="" src="thumbnails/' . $image . '" /></a>';
+                        foreach ($episode['thumbnails'] as $thumbnail) {
+                                echo '<a title="" href="episodes.php?episode=' . $episode['number'] . '&clip=' . $thumbnail['clip'] . '"><img alt="" src="thumbnails/' . $thumbnail['image'] . '" /></a>';
                             }
                         
                         echo '</div>';

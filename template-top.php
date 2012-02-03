@@ -80,7 +80,7 @@
         </div>
         
         <div id="social"><a title="" href="http://twitter.com/#!/groovechomp"><img alt="" src="images/social-twitter.png" /></a>
-                         <a title="" href="http://www.facebook.com/pages/Local-Brew/236406046425742"><img alt="" src="images/social-facebook.png" /></a>
+                         <a title="" href="http://www.facebook.com/localbrew206"><img alt="" src="images/social-facebook.png" /></a>
                          <a title="" href="http://www.youtube.com/localbrew206"><img alt="" src="images/social-youtube.png" /></a>
         </div>
       </div>
