@@ -63,6 +63,8 @@
               var player;
               function onYouTubePlayerAPIReady() {
                   player = new YT.Player('player', {
+                      width: 720,
+                      height: 405,
                       events: {
                           'onReady': onPlayerReady,
                           // 'onStateChange': onPlayerStateChange
