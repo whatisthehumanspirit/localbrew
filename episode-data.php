@@ -3,32 +3,32 @@
 //DO NOTHING ABOVE THIS LINE, BRO
         // Episode
         array(
-            "number" => "0",
-            "title" => "Episode 0",
+            "number" => "2",
+            "title" => "Episode 2: Sophomore Slum",
             // No quotes in the summary, jackass! Just trust me. Apostrophes are OK.
-            "summary" => "You've arrived!  …but a bit too early.  Episodes 1 posts on <br />Wednesday the 25th, but until then check out the tumblr and the (206)411 blog down below!",
+            "summary" => "New marriages, Mariner Fanfest, and quality time with The Real Housewives of Aurora.  Special shout out to the Sonics fans who want to express their feelings for the OKC Thunder, and for Seattle singles looking for love.  There's no good reason someone didn't get arrested in the course of making this.",
             
-            "playlist" => "71C8CB990F2F82CB",
+            "playlist" => "2B620AE3BE5806E1",
             "thumbnails" => array(
                 array(
-                    "image" => "ep-0-thumb-1.jpg",
+                    "image" => "ep-2-thumb-1.jpg",
                     "clip"  => 1,
                 ),
                 array(
-                    "image" => "ep-0-thumb-2.jpg",
-                    "clip"  => 1,
+                    "image" => "ep-2-thumb-2.jpg",
+                    "clip"  => 2,
                 ),
                 array(
-                    "image" => "ep-0-thumb-3.jpg",
-                    "clip"  => 1,
+                    "image" => "ep-2-thumb-3.jpg",
+                    "clip"  => 3,
                 ),
                 array(
-                    "image" => "ep-0-thumb-4.jpg",
-                    "clip"  => 1,
+                    "image" => "ep-2-thumb-4.jpg",
+                    "clip"  => 3,
                 ),
                 array(
-                    "image" => "ep-0-thumb-5.jpg",
-                    "clip"  => 1,
+                    "image" => "ep-2-thumb-5.jpg",
+                    "clip"  => 4,
                 )
             )
         ),
@@ -66,6 +66,8 @@
             )
         ),
         // End episode
+
+
 
 //DO NOTHING BENEATH THIS LINE, DICK
     );
