@@ -9,6 +9,13 @@
 
     <title>Local Brew: Seattle's Online Comedy Show</title>
 
+<meta property="og:title" content="Local Brew - Seattle&#039;s Online Comedy Show.  We live here. We laugh here." />
+<meta property="og:type" content="tv_show" />
+<meta property="og:url" content="http://localbrew.com/" />
+<meta property="og:image" content="http://www.facebook.com/photo.php?fbid=257350117664668&amp;set=a.236406209759059.59629.236406046425742&amp;type=3&amp;theater" />
+<meta property="og:site_name" content="Local Brew" />
+<meta property="fb:admins" content="2033090" />
+
     <link rel="stylesheet" type="text/css" media="screen" href="css/screen.css" />
     
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
