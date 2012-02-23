@@ -88,6 +88,7 @@
             <h3><?php echo $episodes[$currentEpisodeIndex]['title']; ?></h3>
             
             <p><?php echo $episodes[$currentEpisodeIndex]['summary']; ?></p>
+            <fb:like href="http://www.facebook.com/localbrew206" send="true" width="50" show_faces="true" colorscheme="dark" font="verdana"></fb:like>
           </div>
           
           <div class="clear"></div>
@@ -188,4 +189,13 @@
             </div>
           </div>
         </div>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=280528758643105";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <?php require_once('template-bottom.php'); ?>
