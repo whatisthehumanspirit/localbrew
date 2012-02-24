@@ -3,6 +3,39 @@
 //DO NOTHING ABOVE THIS LINE, BRO
         // Episode
         array(
+            "number" => "1",
+            "title" => "Episode 1: A White Welcome",
+            // No quotes in the summary, jackass! Just trust me. Apostrophes are OK.
+            "summary" => "The snow tried to stop us, but the first show is here.  Did love survive Seattle's worst storm? Play the city's favorite game: Homeless or Hipster, and find out why the hell there's a huge tent of horses in Marymoor.  Share what you like on Facebook because we have no friends!" ,
+            
+            "playlist" => "E0737A01DF46B62A",
+            "thumbnails" => array(
+                array(
+                    "image" => "ep-1-thumb-1.jpg",
+                    "clip"  => 2,
+                ),
+                array(
+                    "image" => "ep-1-thumb-2.jpg",
+                    "clip"  => 3,
+                ),
+                array(
+                    "image" => "ep-1-thumb-5.jpg",
+                    "clip"  => 3,
+                ),
+                array(
+                    "image" => "ep-1-thumb-3.jpg",
+                    "clip"  => 3,
+                ),
+                array(
+                    "image" => "ep-1-thumb-4.jpg",
+                    "clip"  => 4,
+                )
+            )
+        ),
+        // End episode      
+
+  // Episode
+        array(
             "number" => "2",
             "title" => "Episode 2: Sophomore Slum",
             // No quotes in the summary, jackass! Just trust me. Apostrophes are OK.
@@ -36,36 +69,37 @@
         
         // Episode
         array(
-            "number" => "1",
-            "title" => "Episode 1: A White Welcome",
+            "number" => "3",
+            "title" => "Episode 3: Kindred Connections",
             // No quotes in the summary, jackass! Just trust me. Apostrophes are OK.
-            "summary" => "The snow tried to stop us, but the first show is here.  Did love survive Seattle's worst storm? Play the city's favorite game: Homeless or Hipster, and find out why the hell there's a huge tent of horses in Marymoor.  Share what you like on Facebook because we have no friends!",
+            "summary" => "Love is in the air and so is crime as we hang out at Pintxo in Belltown, examining the familiar issue of tipping your barista. We head to Westlake Center to solicit for signatures while danger lurks in Kirkland, and Sasquatch is discovered hanging out in Pioneer Square. This episode is PG-13 and surprisingly safe for work, but don't get used to it.",
             
-            "playlist" => "E0737A01DF46B62A",
+            "playlist" => "7201319C532BDD90",
             "thumbnails" => array(
                 array(
-                    "image" => "ep-1-thumb-1.jpg",
+                    "image" => "ep-3-thumb-1.jpg",
+                    "clip"  => 1,
+                ),
+                array(
+                    "image" => "ep-3-thumb-2.jpg",
+                    "clip"  => 1,
+                ),
+                array(
+                    "image" => "ep-3-thumb-3.jpg",
                     "clip"  => 2,
                 ),
                 array(
-                    "image" => "ep-1-thumb-2.jpg",
+                    "image" => "ep-3-thumb-4.jpg",
                     "clip"  => 3,
                 ),
                 array(
-                    "image" => "ep-1-thumb-5.jpg",
-                    "clip"  => 3,
-                ),
-                array(
-                    "image" => "ep-1-thumb-3.jpg",
-                    "clip"  => 3,
-                ),
-                array(
-                    "image" => "ep-1-thumb-4.jpg",
+                    "image" => "ep-3-thumb-5.jpg",
                     "clip"  => 4,
                 )
             )
         ),
         // End episode
+
 
 
 
