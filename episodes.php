@@ -75,7 +75,7 @@
               function onPlayerReady(event) {
                   // player.playVideo();
                   player.setPlaybackQuality(videoQuality);
-                  player.loadPlaylist(currentEpisodePlaylistID, startingClipIndex);
+                  player.cuePlaylist(currentEpisodePlaylistID, startingClipIndex);
               }
             
               // API quirk - with manual iframe embedding, quality isn't forced if called by onReady event
