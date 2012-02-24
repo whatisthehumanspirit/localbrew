@@ -88,7 +88,7 @@
             <h3><?php echo $episodes[$currentEpisodeIndex]['title']; ?></h3>
             
             <p><?php echo $episodes[$currentEpisodeIndex]['summary']; ?></p>
-            <fb:like href="http://www.facebook.com/localbrew206" send="true" width="50" show_faces="true" colorscheme="dark" font="verdana"></fb:like>
+            <fb:like href="http://www.facebook.com/localbrew206" width="50" show_faces="true" colorscheme="dark" font="verdana"></fb:like>
           </div>
           
           <div class="clear"></div>
