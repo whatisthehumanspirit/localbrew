@@ -2,12 +2,19 @@
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
 
   <head>
   	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
     <title>Local Brew: Seattle's Online Comedy Show</title>
+
+<meta property="og:title" content="Local Brew - Seattle&#039;s Online Comedy Show.  We live here. We laugh here." />
+<meta property="og:type" content="tv_show" />
+<meta property="og:url" content="http://localbrew.com/" />
+<meta property="og:image" content="http://www.facebook.com/photo.php?fbid=257350117664668&amp;set=a.236406209759059.59629.236406046425742&amp;type=3&amp;theater" />
+<meta property="og:site_name" content="Local Brew" />
+<meta property="fb:admins" content="2033090" />
 
     <link rel="stylesheet" type="text/css" media="screen" href="css/screen.css" />
     
