@@ -83,7 +83,6 @@
       window.fbAsyncInit = function() {
           FB.init({
               appId: '280528758643105', 
-              channelUrl: '//www.localbrew.com/channel.php', 
               status: true, // check login status
               cookie: true, // use cookies
               xfbml: true,  // parse xfbml
