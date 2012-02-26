@@ -83,9 +83,10 @@
       window.fbAsyncInit = function() {
           FB.init({
               appId: '280528758643105', 
+              channelUrl: '//www.localbrew.com/channel.php', 
               status: true, // check login status
               cookie: true, // use cookies
-              xfbml: true,   // parse xfbml
+              xfbml: true,  // parse xfbml
           });
       };
       
@@ -95,7 +96,15 @@
           js = d.createElement('script'); js.id = id; js.async = true;
           js.src = "//connect.facebook.net/en_US/all.js";
           d.getElementsByTagName('head')[0].appendChild(js);
-       }(document));
+      }(document));
+       
+      (function(d){
+           var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+           if (d.getElementById(id)) {return;}
+           js = d.createElement('script'); js.id = id; js.async = true;
+           js.src = "//connect.facebook.net/en_US/all.js";
+           ref.parentNode.insertBefore(js, ref);
+      }(document));
     </script>
     
     <div id="main">
