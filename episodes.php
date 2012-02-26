@@ -89,7 +89,7 @@
             
             <p><?php echo $episodes[$currentEpisodeIndex]['summary']; ?></p>
             
-            <iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Flocalbrew206&amp;send=false&amp;layout=standard&amp;width=192&amp;show_faces=true&amp;action=like&amp;colorscheme=dark&amp;font=verdana&amp;height=80" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:192px; height:80px;" allowTransparency="true"></iframe>
+            <iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Flocalbrew206&amp;send=false&amp;layout=standard&amp;width=192&amp;height=80&amp;show_faces=true&amp;action=like&amp;colorscheme=dark&amp;font=arial&amp;appId=280528758643105" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:192px; height:80px;" allowTransparency="true"></iframe>
           </div>
           
           <div class="clear"></div>
