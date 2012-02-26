@@ -2,19 +2,21 @@
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
+<html xmlns="http://www.w3.org/1999/xhtml" 
+      xmlns:og="http://ogp.me/ns#" 
+      xmlns:fb="http://ogp.me/ns/fb#">
 
   <head>
   	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
     <title>Local Brew: Seattle's Online Comedy Show</title>
 
-<meta property="og:title" content="Local Brew - Seattle&#039;s Online Comedy Show.  We live here. We laugh here." />
-<meta property="og:type" content="tv_show" />
-<meta property="og:url" content="http://localbrew.com/" />
-<meta property="og:image" content="http://www.facebook.com/photo.php?fbid=257350117664668&amp;set=a.236406209759059.59629.236406046425742&amp;type=3&amp;theater" />
-<meta property="og:site_name" content="Local Brew" />
-<meta property="fb:admins" content="2033090" />
+    <meta property="og:title" content="Local Brew - Seattle&#039;s Online Comedy Show.  We live here. We laugh here." />
+    <meta property="og:type" content="tv_show" />
+    <meta property="og:url" content="http://localbrew.com/" />
+    <meta property="og:image" content="http://www.facebook.com/photo.php?fbid=257350117664668&amp;set=a.236406209759059.59629.236406046425742&amp;type=3&amp;theater" />
+    <meta property="og:site_name" content="Local Brew" />
+    <meta property="fb:admins" content="2033090" />
 
     <link rel="stylesheet" type="text/css" media="screen" href="css/screen.css" />
     
@@ -76,6 +78,26 @@
   </head>
 
   <body>
+    <div id="fb-root"></div>
+    <script>
+      window.fbAsyncInit = function() {
+          FB.init({
+              appId: '280528758643105', 
+              status: true, // check login status
+              cookie: true, // use cookies
+              xfbml: true,   // parse xfbml
+          });
+      };
+      
+      // Load the SDK asynchronously
+      (function(d) {
+          var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
+          js = d.createElement('script'); js.id = id; js.async = true;
+          js.src = "//connect.facebook.net/en_US/all.js";
+          d.getElementsByTagName('head')[0].appendChild(js);
+       }(document));
+    </script>
+    
     <div id="main">
       <div id="navigation">
         <h2><a title="" href="index.php">Local Brew</a></h2>

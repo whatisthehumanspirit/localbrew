@@ -319,6 +319,7 @@ body {
 #content-bottom-col-1 {
   float: right;
   margin:24px 16px 24px 0px;
+	height: 340px;
 }
 
 #tumblr {
@@ -346,10 +347,11 @@ body {
   float: right;
   margin:24px 24px 24px 0px;
   width: 480px;
+	height: 340px;
 }
 
 #community {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 
 #community img {
@@ -357,7 +359,7 @@ body {
   margin-right: 16px;
   margin-bottom: 16px;
   max-width: 192px;
-  max-height: 192px;
+  max-height: 176px;
 }
 
 .post-title {

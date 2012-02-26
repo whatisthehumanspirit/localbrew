@@ -45,7 +45,7 @@
     
     require_once('template-top.php');
 ?>
-        <div id="episode">          
+        <div id="episode">
           <!--<iframe id="player" src="http://www.youtube.com/embed/videoseries?list=<?php echo $episodes[$currentEpisodeIndex]['playlist']; ?>&amp;hl=en_US&amp;hd=1&amp;enablejsapi=1" frameborder="0" width="720" height="405"></iframe>-->
           <div id="player"></div>
           
@@ -88,7 +88,8 @@
             <h3><?php echo $episodes[$currentEpisodeIndex]['title']; ?></h3>
             
             <p><?php echo $episodes[$currentEpisodeIndex]['summary']; ?></p>
-            <fb:like href="http://www.facebook.com/localbrew206" width="50" show_faces="true" colorscheme="dark" font="verdana"></fb:like>
+            
+            <iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Flocalbrew206&amp;send=false&amp;layout=standard&amp;width=192&amp;show_faces=true&amp;action=like&amp;colorscheme=dark&amp;font=arial&amp;height=80" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:192px; height:80px;" allowTransparency="true"></iframe>
           </div>
           
           <div class="clear"></div>
@@ -189,13 +190,4 @@
             </div>
           </div>
         </div>
-
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=280528758643105";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
 <?php require_once('template-bottom.php'); ?>
