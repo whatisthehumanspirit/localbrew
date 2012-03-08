@@ -1,4 +1,12 @@
-<?php require_once('template-top.php'); ?>
+<?php
+    // Facebook metadata
+    $ogUrl = "http://localbrew.com/";
+    $ogImage = "http://localbrew.com/images/facebook-profile-pic.jpg";
+    $ogTitle = "Local Brew";
+    $ogDescription = "Seattle's Online Comedy Show.  We live here. We laugh here.";
+    
+    require_once('template-top.php');
+?>
         <div id="splash">
           <script type="text/javascript">
               $(document).ready(function() {
@@ -37,6 +45,4 @@
           
           <img id="play-icon" alt="" src="images/play-icon.png" />
         </div>
-        
-        
 <?php require_once('template-bottom.php'); ?>

@@ -24,6 +24,12 @@
         $startingClipIndex = $_GET['clip'] - 1;
     }
     
+    // Facebook metadata
+    $ogUrl = "http://localbrew.com/episodes.php?episode=" . $currentEpisode;
+    $ogImage = "http://localbrew.com/thumbnails/" . $episodes[$currentEpisodeIndex]['thumbnails'][1]['image'];
+    $ogTitle = "Local Brew " . $episodes[$currentEpisodeIndex]['title'];
+    $ogDescription = $episodes[$currentEpisodeIndex]['summary'];
+    
     // Specify YouTube video quality in URL
     $quality = $_GET['quality'];
     switch ($quality) {
@@ -88,7 +94,8 @@
             
             <p><?php echo $episodes[$currentEpisodeIndex]['summary']; ?></p>
             
-            <iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Flocalbrew206&amp;send=false&amp;layout=standard&amp;width=192&amp;height=80&amp;show_faces=true&amp;action=like&amp;colorscheme=dark&amp;font=arial&amp;appId=280528758643105" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:192px; height:80px;" allowTransparency="true"></iframe>
+            <!--<iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Flocalbrew206&amp;send=false&amp;layout=standard&amp;width=192&amp;height=80&amp;show_faces=true&amp;action=like&amp;colorscheme=dark&amp;font=arial&amp;appId=280528758643105" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:192px; height:80px;" allowTransparency="true"></iframe>-->
+            <div class="fb-like" data-href="<?php echo $ogUrl; ?>" data-send="false" data-width="192" data-show-faces="false" data-colorscheme="dark" data-font="arial"></div>
           </div>
           
           <div class="clear"></div>

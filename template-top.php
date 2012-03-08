@@ -5,19 +5,19 @@
 <html xmlns="http://www.w3.org/1999/xhtml" 
       xmlns:og="http://ogp.me/ns#" 
       xmlns:fb="http://ogp.me/ns/fb#">
-
   <head>
   	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
+    
     <title>Local Brew: Seattle's Online Comedy Show</title>
-
-    <meta property="og:title" content="Local Brew - Seattle&#039;s Online Comedy Show.  We live here. We laugh here." />
-    <meta property="og:type" content="tv_show" />
-    <meta property="og:url" content="http://localbrew.com/" />
-    <meta property="og:image" content="http://www.facebook.com/photo.php?fbid=257350117664668&amp;set=a.236406209759059.59629.236406046425742&amp;type=3&amp;theater" />
-    <meta property="og:site_name" content="Local Brew" />
+    
     <meta property="fb:admins" content="2033090" />
-
+    <meta property="og:site_name" content="Local Brew" />
+    <meta property="og:url" content="<?php echo $ogUrl; ?>" />
+    <meta property="og:image" content="<?php echo $ogImage; ?>" />
+    <meta property="og:title" content="<?php echo $ogTitle; ?>" />
+    <meta property="og:description" content="<?php echo $ogDescription; ?>" />
+    <meta property="og:type" content="tv_show" />
+    
     <link rel="stylesheet" type="text/css" media="screen" href="css/screen.css" />
     
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
@@ -80,23 +80,13 @@
   <body>
     <div id="fb-root"></div>
     <script>
-      window.fbAsyncInit = function() {
-          FB.init({
-              appId: '280528758643105', 
-              status: true, // check login status
-              cookie: true, // use cookies
-              xfbml: true,  // parse xfbml
-          });
-      };
-      
-      // Load the SDK asynchronously
-      (function(d){
-           var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
-           if (d.getElementById(id)) {return;}
-           js = d.createElement('script'); js.id = id; js.async = true;
-           js.src = "//connect.facebook.net/en_US/all.js";
-           ref.parentNode.insertBefore(js, ref);
-      }(document));
+      (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=280528758643105";
+          fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
     </script>
     
     <div id="main">

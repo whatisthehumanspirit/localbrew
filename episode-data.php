@@ -1,6 +1,7 @@
 <?php
     $episodes = array(
-//DO NOTHING ABOVE THIS LINE, BRO
+    //DO NOTHING ABOVE THIS LINE, BRO
+        
         // Episode
         array(
             "number" => "1",
@@ -33,7 +34,8 @@
             )
         ),
         // End episode      
-  // Episode
+        
+        // Episode
         array(
             "number" => "2",
             "title" => "Episode 2: Sophomore Slum",
@@ -98,6 +100,7 @@
             )
         ),
         // End episode
+        
         // Episode
         array(
             "number" => "4",
@@ -130,7 +133,7 @@
             )
         ),
         // End episode
-
-//DO NOTHING BENEATH THIS LINE, DICK
+        
+    //DO NOTHING BENEATH THIS LINE, DICK
     );
 ?>
