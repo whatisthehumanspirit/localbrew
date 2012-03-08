@@ -46,7 +46,6 @@
     require_once('template-top.php');
 ?>
         <div id="episode">
-          <!--<iframe id="player" src="http://www.youtube.com/embed/videoseries?list=<?php echo $episodes[$currentEpisodeIndex]['playlist']; ?>&amp;hl=en_US&amp;hd=1&amp;enablejsapi=1" frameborder="0" width="720" height="405"></iframe>-->
           <div id="player"></div>
           
           <script type="text/javascript">

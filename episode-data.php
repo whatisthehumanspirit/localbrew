@@ -33,7 +33,6 @@
             )
         ),
         // End episode      
-
   // Episode
         array(
             "number" => "2",
@@ -99,9 +98,38 @@
             )
         ),
         // End episode
-
-
-
+        // Episode
+        array(
+            "number" => "4",
+            "title" => "Episode 4: Here Come the Ladies!",
+            // No quotes in the summary, jackass! Just trust me. Apostrophes are OK.
+            "summary" => "One lucky woman gets an Extreme Makeunder on Afternoon Pamphlet, Homeless or Hipster returns, and we take over a Rock Paper Scissors tournament in the U District.  We're hanging out at Kell's for an episode full of women that are, for the first time, all played by women. Some would say we're breaking the gender barrier, but that wouldn't actually make sense.",
+            
+            "playlist" => "B5B51A63D849DE8B",
+            "thumbnails" => array(
+                array(
+                    "image" => "ep-4-thumb-1.jpg",
+                    "clip"  => 1,
+                ),
+                array(
+                    "image" => "ep-4-thumb-2.jpg",
+                    "clip"  => 1,
+                ),
+                array(
+                    "image" => "ep-4-thumb-3.jpg",
+                    "clip"  => 2,
+                ),
+                array(
+                    "image" => "ep-4-thumb-4.jpg",
+                    "clip"  => 3,
+                ),
+                array(
+                    "image" => "ep-4-thumb-5.jpg",
+                    "clip"  => 4,
+                )
+            )
+        ),
+        // End episode
 
 //DO NOTHING BENEATH THIS LINE, DICK
     );
