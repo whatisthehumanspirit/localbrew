@@ -134,6 +134,39 @@
         ),
         // End episode
         
+        // Episode
+        array(
+            "number" => "5",
+            "title" => "Episode 5: Welcome to Seattle",
+            // No quotes in the summary, jackass! Just trust me. Apostrophes are OK.
+            "summary" => "Party in the city where the freeze is on as we parody Will Smith's 'Miami.' No neighborhood is safe in this episode that boasts a record number of flannels, beanies, and subtitles.  Tim runs the St. Pat's Dash and we find out how the 1% stay occupied. What else is there to say? Let's get jiggy wit it...",
+            
+            "playlist" => "CEA4E84452FB4674",
+            "thumbnails" => array(
+                array(
+                    "image" => "ep-5-thumb-1.jpg",
+                    "clip"  => 1,
+                ),
+                array(
+                    "image" => "ep-5-thumb-2.jpg",
+                    "clip"  => 1,
+                ),
+                array(
+                    "image" => "ep-5-thumb-3.jpg",
+                    "clip"  => 2,
+                ),
+                array(
+                    "image" => "ep-5-thumb-4.jpg",
+                    "clip"  => 3,
+                ),
+                array(
+                    "image" => "ep-5-thumb-5.jpg",
+                    "clip"  => 4,
+                )
+            )
+        ),
+        // End episode
+        
     //DO NOTHING BENEATH THIS LINE, DICK
     );
 ?>
