@@ -55,7 +55,7 @@
           <div id="player"></div>
           
           <script type="text/javascript">
-              var currentEpisodePlaylistID =  "<?php echo $episodes[$currentEpisodeIndex]['playlist']; ?>";
+              var currentEpisodePlaylistID = "<?php echo $episodes[$currentEpisodeIndex]['playlist']; ?>";
               var startingClipIndex = "<?php echo $startingClipIndex; ?>";
               var videoQuality = "<?php echo $videoQuality; ?>"
               
@@ -80,7 +80,8 @@
               function onPlayerReady(event) {
                   // player.playVideo();
                   player.setPlaybackQuality(videoQuality);
-                  player.cuePlaylist(currentEpisodePlaylistID, startingClipIndex);
+                  // player.cuePlaylist(currentEpisodePlaylistID, startingClipIndex);
+                  player.cuePlaylist({'listType': 'playlist', 'list': currentEpisodePlaylistID,'index': startingClipIndex})
               }
             
               // API quirk - with manual iframe embedding, quality isn't forced if called by onReady event
